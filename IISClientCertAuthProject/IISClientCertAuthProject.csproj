@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>IISClientCertAuthProject</AssemblyName>
+    <RootNamespace>IISClientCertAuth</RootNamespace>
+    <Authors>carathorys</Authors>
+    <Company />
+    <PackageId />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="logs\TextFile.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="logs\TextFile.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+</Project>
